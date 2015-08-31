@@ -1,0 +1,18 @@
+mongod --repair
+
+mongod  --- start mongo db in system
+
+mongo --- if want to update by commands in mongo db
+
+show dbs
+
+use 'dbname' 
+eg.  use contactList
+
+db.contactList.insert({}) 
+
+db.contactList.find()
+
+db.contactList.find().pretty()
+
+db.contactList.insert([{}])

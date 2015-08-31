@@ -1,0 +1,13 @@
+<div id="sbox_footerCopyrightSection" class="sbox_footerCopyrightSection container padding_LR_0">
+    <div class="sbox_footerCopyrightBlock row text_xs_center">
+        <span class="sbox_footerLinks col-xs-12 col-sm-5">
+            <ul>
+                <li ng-repeat="data in footerNavs">
+                    <a ui-sref={{data.href}} ng-class="{sbox_activeNav: activeMenuHandler('/{{data.location}}')}" ng-bind="data.title"></a>
+                    <span ng-if="displayNavSeparator($index)">/</span>
+                </li>
+            </ul>
+        </span>
+        <span class="sbox_copyrightText col-xs-12 col-sm-7">@2015 MEAN app. All rights reserved.</span>
+    </div>
+</div>

@@ -1,0 +1,11 @@
+<div class="sbox_headerLogo container">
+	<span class="sbox_brandImage  pull-left">MEAN</span>
+	<span class="sbox_headerLinks">
+            <ul>
+                <li ng-repeat="data in headerNavs">
+                    <a ui-sref={{data.href}} ng-class="{sbox_activeNav: activeMenuHandler('/{{data.location}}')}" ng-bind="data.title"></a>
+                    <span ng-if="displayNavSeparator($index)">/</span>
+                </li>
+            </ul>
+        </span>
+</div>

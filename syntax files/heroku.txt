@@ -1,0 +1,29 @@
+Heroku
+
+heroku login
+
+git clone https://github.com/vikassarkar/xyz.git
+
+cd xyz
+
+heroku create xy
+
+git push heroku master
+
+heroku ps:scale web=1
+
+heroku open
+
+heroku logs --tail
+
+
+Use a Procfile, a text file in the root directory of your application, to explicitly declare what command should be executed to start your app.
+
+web: node index.js
+
+
+//heroku destroy xy
+
+//https://git.heroku.com/whispering-mesa-1101.git
+
+

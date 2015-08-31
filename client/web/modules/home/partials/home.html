@@ -1,0 +1,58 @@
+<link rel="stylesheet" type="text/css" href="web/modules/home/assets/css/contactList.css" >
+
+<div >
+    <h1>Contact List App</h1>
+    <div class="table text-center">
+        <div class="alert alert-info clearfix row">
+            <div class="col-xs-9">
+                <span class="col-xs-2">S.R</span>
+                <span class="col-xs-3">Name</span>
+                <span class="col-xs-4">E-mail</span>
+                <span class="col-xs-3">Number</span>
+            </div>
+            <div class="col-xs-3">
+                <span class="col-xs-12">Action</span>
+            </div>
+        </div>
+        <div>
+            <div class="row contactInput">
+                <div class="col-xs-9">
+                    <span class="col-xs-2">&nbsp;</span>
+                    <span class="col-xs-3"><input type="text" class="form-control" ng-model="contact.name"></span>
+                    <span class="col-xs-4"><input type="text" class="form-control" ng-model="contact.email"></span>
+                    <span class="col-xs-3"><input type="text" class="form-control" ng-model="contact.number"></span>
+                </div>
+                <div class="col-xs-3">
+                    <!-- <span>
+                        <button class="btn" ng-class="btn-primary: contact !== '' || contact !== undefined, btn-default: contact == '' || contact == undefined" ng-click="addContact()" ng-disabled="contact == '' || contact == undefined">Add</button>
+                    </span>-->
+                    <span>
+                        <button class="btn btn-info" ng-click="addContact()">Ad</button>
+                    </span>
+                    <span>
+                        <button class="btn btn-info" ng-click="updateContact()">Upd</button>
+                    </span>
+                    <span>
+                        <button class="btn btn-info" ng-click="clearEditable()">Cls</button>
+                    </span>
+                </div>
+            </div>
+            <div class="row contactOutput" ng-repeat="data in contactListData">
+                <div class="col-xs-9">
+                    <span class="col-xs-2" ng-bind="$index+1"></span>
+                    <span class="col-xs-3" ng-bind="data.name"></span>
+                    <span class="col-xs-4" ng-bind="data.email"></span>
+                    <span class="col-xs-3" ng-bind="data.number"></span>
+                </div>
+                <div class="col-xs-3">
+                    <span>
+                        <button class="btn btn-danger" ng-click="removeContact(data._id)">Remove</button>
+                    </span>
+                    <span>
+                        <button class="btn btn-warning" ng-click="editContact(data)">Edit</button>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

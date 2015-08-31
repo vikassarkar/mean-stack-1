@@ -1,0 +1,18 @@
+git init
+
+ls
+
+git add .
+
+git status
+
+git commit -m 'first commit'
+
+git remote add origin https://github.com/vikassarkar/mean-app-2.git
+
+git push -u origin master
+
+
+*******************************
+
+git clone https://github.com/vikassarkar/mean-app-2.git

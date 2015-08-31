@@ -1,0 +1,45 @@
+<link rel="stylesheet" type="text/css" href="web/modules/components/assets/css/components.css" >
+
+<div >
+    <h1>component List App</h1>
+    <div class="table text-center">
+        <div class="alert alert-info clearfix row">
+            <div class="col-xs-9">
+                <span class="col-xs-2">S.R</span>
+                <span class="col-xs-3">Item</span>
+                <span class="col-xs-4">Quantity</span>
+            </div>
+            <div class="col-xs-3">
+                <span class="col-xs-12">Action</span>
+            </div>
+        </div>
+        <div>
+            <div class="row componentInput">
+                <div class="col-xs-9">
+                    <span class="col-xs-2">&nbsp;</span>
+                    <span class="col-xs-3"><input type="text" class="form-control" ng-model="component.item"></span>
+                    <span class="col-xs-4"><input type="text" class="form-control" ng-model="component.quantity"></span>
+                </div>
+                <div class="col-xs-3">
+                    <span>
+                        <button class="btn btn-info" ng-click="addComponent()">Add</button>
+                    </span>
+                </div>
+            </div>
+            <div class="row componentOutput" ng-repeat="comp in componentListData">
+                <div class="col-xs-9">
+                    <span class="col-xs-2" ng-bind="$index+1"></span>
+                    <span class="col-xs-3" ng-bind="comp.item"></span>
+                    <span class="col-xs-4" ng-bind="comp.quantity"></span>
+                </div>
+                <div class="col-xs-3">
+                    <span>
+                        <button class="btn btn-danger" ng-click="removeComponent(comp._id)">Remove</button>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div ui-view="tabs" ></div>

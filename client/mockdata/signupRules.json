@@ -1,0 +1,56 @@
+{
+    "rules": {
+        "firstname": {
+            "required": true,
+            "minlength": 10
+        },
+        "lastname": {
+            "required": true
+        },
+        "email": {
+            "required": true,
+            "amdocsEmail": true
+        },
+        "password": {
+            "required": true
+        },
+        "confirm-password": {
+            "required": true,
+            "equalTo": "#form-password"
+        },
+        "gender": {
+            "required": true
+        },
+        "dataA": {
+            "group_require": [2, ".form-data"]
+        },
+        "dataB": {
+            "group_require": [2, ".form-data"]
+        },
+        "dataC": {
+            "group_require": [2, ".form-data"]
+        }
+
+    },
+    "messages": {
+        "firstname": {
+            "required": "Please enter your firstname",
+            "minlength": "Please enter your firstname in minimum 10 characters"
+        },
+        "lastname": "Please enter your lastname",
+        "email": {
+            "required": "We need your email address to contact you",
+            "email": "Your email address must be in the format of name@domain.com"
+        },
+        "password": {
+            "required": "Please enter a password"
+        },
+        "confirm-password": {
+            "required": "Please enter password",
+            "equalTo": "Password dose not match."
+        },
+        "groups": {
+
+        }
+    }
+}

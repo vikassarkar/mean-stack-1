@@ -1,0 +1,37 @@
+install nodejs
+install mongodb
+install heroku
+
+install npm
+npm install --global npm@latest
+
+install npm grunt
+npm install --global grunt-cli
+
+install npm bower
+npm install --global bower
+
+npm init ----to generate package.json
+
+
+## Generating express package
+* npm install express-generator --save-dev
+* no need to create package.json, below code will auto matically create it
+
+```
+*express --ejs
+
+```
+
+*npm install passport-local --save  //just ur id password no facebook gmail...etc
+
+*npm install passport --save -dev //node authentication
+
+*bcrypt-nodejs //save passwords in # format
+
+
+
+
+## HEADER
+* paragraph
+``` line
