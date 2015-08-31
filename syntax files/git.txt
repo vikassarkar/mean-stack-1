@@ -16,3 +16,13 @@ git push -u origin master
 *******************************
 
 git clone https://github.com/vikassarkar/mean-app-2.git
+
+git status
+
+git add index.html 
+
+git commit -m "message 
+
+commit"
+
+git push
